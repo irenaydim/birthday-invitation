@@ -12,9 +12,9 @@ const Header = () => {
   useEffect(() => {
     let timer
     if (currDate < partyStartDate) {
-      window.setInterval(() => setCurrDate(new Date()), 1000);
+      timer = window.setInterval(() => setCurrDate(new Date()), 1000);
     } else {
-      window.setInterval(() => setCurrDate(new Date()), 30000);
+      timer = window.setInterval(() => setCurrDate(new Date()), 30000);
     }
     return () => window.clearInterval(timer);
   }, [currDate, partyStartDate])

@@ -23,15 +23,15 @@ const Guests = () => {
     <Tile color="bg-sailingtangerine mb-5" imagePos='l' imageSrc={birthday.src}>
         <div className="text-center md:text-left md:pl-10"><H2>Списък с гости:</H2></div>
         {guestList.map((table, idx) =>
-            <>
-                <div key={`table-${idx}`} className="flex flex-row">
+            <div key={`table-${idx}`}>
+                <div className="flex flex-row">
                     <div className='pr-2 text-center'><H4>Маса #{idx+1}:</H4></div>
                     <div className="flex flex-row items-center justify-center md:justify-start flex-wrap">
                         {table.map((guest, index, input) => <p key={index} className="break-normal text-sm font-[Comfortaa]">{guest}{index !== input.length - 1 ? <span className="px-1">&#8226;</span> : null}</p>)}
                     </div>
                 </div>
                 {idx < guestList.length - 1 && <hr className="border-1 border-black m-1" />}
-            </>
+            </div>
         )}
         <hr className="border-1 border-black m-1" />
         {info.map((item, index) => <p key={index} className="break-normal text-md font-bold font-[Comfortaa] pt-1">{item}</p>)}
