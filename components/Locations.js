@@ -10,7 +10,7 @@ const locationsList = [
 
 const Locations = () => {
     return (
-    <Tile color="bg-[#F3B471] mb-5" imageSrc={tablet.src}>
+    <Tile color="bg-youngsalmon mb-5" imageSrc={tablet.src}>
         <div className="text-center md:text-left md:pl-10"><H2>Кога и къде?</H2></div>
         {locationsList.map(({time, text, url}, idx) => 
             <div key={`location-${idx}`} className="flex flex-row pr-2 items-center">

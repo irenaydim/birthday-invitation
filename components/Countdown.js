@@ -1,12 +1,12 @@
 import Tile from "./Tile"
 
 const Countdown = ({ weeks, days, hours, minutes, seconds }) => {
-    const numsClassName = "text-4xl text-[#F9EBDE] leading-none font-['Luckiest_Guy']"
-    const textClassName = "text-xs text-[#F9EBDE] font-medium font-['Balsamiq_Sans'] text-center"
+    const numsClassName = "text-4xl text-seasaltsherbet leading-none font-['Luckiest_Guy']"
+    const textClassName = "text-xs text-seasaltsherbet font-medium font-['Balsamiq_Sans'] text-center"
   
     return (
     <div className='pb-2'>
-      <Tile color='bg-[#F8B996]/80'>
+      <Tile color='bg-youngsalmon/80'>
         <div className="grid grid-cols-5 gap-x-1 text-center tracking-wide">
           <p className={numsClassName}>{weeks}</p>
           <p className={numsClassName}>{days}</p>
