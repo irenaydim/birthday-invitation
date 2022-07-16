@@ -12,6 +12,7 @@ const Locations = () => {
     return (
     <Tile color="bg-youngsalmon mb-5" imageSrc={tablet.src}>
         <div className="text-center md:text-left md:pl-10"><H2>Кога и къде?</H2></div>
+        <p className="break-normal text-lg font-bold font-[Comfortaa] hover:underline underline-offset-2 text-center md:text-left md:pl-10 pt-1">10 септември 2022</p>
         {locationsList.map(({time, text, url}, idx) => 
             <div key={`location-${idx}`} className="flex flex-row pr-2 items-center">
                 <div className="pr-2"><H4>{time}:</H4></div>
