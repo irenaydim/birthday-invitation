@@ -4,8 +4,8 @@ import camera from '../public/camera.png'
 import H4 from "./H4"
 
 const notes = [
-    'Всички снимки от църквата и ресторанта ще можете да свалите от Google Drive',
-    'Молим ви също да добавите всички снимки, които сте направили към папката в Google Drive'
+    'Всички снимки от църквата и ресторанта ще можете да свалите от Google Drive 📥',
+    'Молим ви също да добавите всички снимки, които сте направили към папката в Google Drive 📤'
 ]
 
 const Photos = () => {
@@ -16,7 +16,7 @@ const Photos = () => {
                 {notes.map(note => <li key={note} className="break-normal text-sm font-[Comfortaa]">{note}</li>)}
             </ul>
             <a href="https://drive.google.com/drive/folders/1-zf99V77XDz4_yTz7eMSmTay0tpi7BBl?usp=sharing" target="blank" className="flex justify-center">
-                <p className="py-2 px-4 rounded text-center mt-2 bg-seasaltsherbet font-[Comfortaa] text-sm font-bold w-content">към Google Drive</p>
+                <p className="py-2 px-4 rounded text-center mt-2 bg-seasaltsherbet font-[Comfortaa] text-sm font-bold w-content">🔗 Google Drive</p>
             </a>
         </Tile>
     )
