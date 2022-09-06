@@ -20,6 +20,7 @@ const Locations = () => {
             </div>
         )}
         <p className="break-normal text-md font-bold font-[Comfortaa] pt-1">Идването в църквата е по желание ⛪</p>
+        <p className="break-normal text-md font-bold font-[Comfortaa] pt-1">Кръстници ще бъдат Дани и Вики ✝️</p>
     </Tile>
     )
 }
